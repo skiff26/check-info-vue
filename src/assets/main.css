@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background: rgb(214,207,207);
+	background: linear-gradient(90deg, rgba(214,207,207,1) 0%, rgba(64,64,69,1) 35%, rgba(39,42,42,1) 63%, rgba(23,24,24,1) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper{
+	position: relative;
+	width: 900px;
+	height: min-content ;
+	border-radius: 50px;
+	background: rgb(14,13,13);
+	background: linear-gradient(90deg, rgba(14,13,13,1) 0%, rgba(101,101,110,1) 35%, rgba(119,128,128,1) 63%, rgba(131,135,135,1) 100%);
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	padding: 35px 15px;
+}
+p.subtitle {
+	margin-top: 10px;
+}
+.selectCity{
+	margin-top: 20px;
+}
+.results p {
+	margin-top: 20px;
+}
+.wrapper input{
+	margin-top: 30px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #110813;
+	color: #fcfcfc;
+	font-size: 14px;
+	padding: 5px 8px;
+	outline: none;
+}
+.wrapper input::placeholder{
+	transition: all 0.3s ease 0s;
+	color: rgba(255, 255, 255, 0.678);
+}
+.wrapper input:focus::placeholder{
+	color: rgb(255, 255, 255);
+}
+.wrapper input:focus{
+	border-bottom-color: #3f3c3f;
+}
+.wrapper .button:disabled{
+	background: #9b8030;
+	cursor: not-allowed;
+}
+.wrapper .button {
+	background: #e3bc4b;
+	color: #fff;
+	border-radius: 10px;
+	border: 2px solid #b99935;
+	padding: 10px 15px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.wrapper .button:hover{
+	transform: scale(1.1) translateY(-5px);
+}
+
+.error, .fail{
+	font-weight: 600;
+	color: #8f1010b9;
+}
+@media (max-width: 1000px){
+	.wrapper{
+		width: 500px;
+	}
+}
+@media (max-width: 630px){
+	.wrapper{
+		width: 100%;
+		margin-top: 10vh;
+	}
+}
